@@ -1,17 +1,15 @@
-import java.util.Scanner;
+public class Uni2Exe05 {
+    public static void main(String[] args) {
+        // Entrada
+        final int VALOR_A = 265;
+        final int VALOR_B = 10;
+        final int VALOR_C = 863;
+        final int VALOR_D = 2;
 
-public class Uni2Exe05  {
- public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+        // Cálculo
+        int diferenca = (VALOR_A * VALOR_B) - (VALOR_C * VALOR_D);
 
-int valora = 265;
-int valorb = 10;
-int valorc = 863;
-int valord = 2;
-int diferenca = (valora * valorb) - (valorc * valord);
-
-System.out.println("A diferença é:" + diferenca);
-
-
- }   
+        // Saída
+        System.out.println("A diferença é: " + diferenca);
+    }
 }
