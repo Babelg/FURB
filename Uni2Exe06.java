@@ -1,25 +1,31 @@
-
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Uni2Exe06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-       
-        System.out.println("Informe o número do funcionário:");
-        int nfunc= scanner.nextInt();
 
-        System.out.println("Informe o número das horas trabalhadas:");
-        int nhoras= scanner.nextInt();
+        // Entrada
+        System.out.print("Informe o número do funcionário: ");
+        int numeroFuncionario = scanner.nextInt();
 
-        System.out.println("Informe o valor do salário:");
-        int nsalario= scanner.nextInt();
-        
-        int soma = nhoras * nsalario; 
-        System.out.println("O valor do salário é de: " + soma);
-       
+        System.out.print("Informe o número de horas trabalhadas: ");
+        int horasTrabalhadas = scanner.nextInt();
+
+        System.out.print("Informe o valor da hora trabalhada: ");
+        double valorHora = scanner.nextDouble();
+
+        //Cálculo
+        double salario = horasTrabalhadas * valorHora;
+
+        //Saída
         DecimalFormat df = new DecimalFormat("0.00");
-        
 
+        //Resultado
+        System.out.println("Número do Funcionário: " + numeroFuncionario);
+        System.out.println("O salário é de: R$ " + df.format(salario));
+
+        //Scanner
+        scanner.close();
     }
 }
