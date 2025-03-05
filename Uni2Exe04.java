@@ -12,11 +12,11 @@ public class Uni2Exe04 {
         double notaB = scanner.nextDouble();
 
         // Pesos
-        double pesoA = 3.5;
-        double pesoB = 7.5;
+        final double PESO_A = 3.5;
+        final double PESO_B = 7.5;
 
         // Média
-        double mediaPonderada = ((notaA * pesoA) + (notaB * pesoB)) / (pesoA + pesoB);
+        double mediaPonderada = ((notaA * PESO_A) + (notaB * PESO_B)) / (PESO_A + PESO_B);
 
         // Resultado
         System.out.printf("A média ponderada é: %.5f%n", mediaPonderada);
